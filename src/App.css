@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+	--primary-color: #c2185b;
+	--secondary-color: #f48fb1;
+	--dark-color: #333;
+	--light-color: #f9f9f9;
+	--facebook: #3b5998;
+	--twitter: #1da2f2;
+	--instagram: #d6249f;
+	--insta-gradient: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	--snapchat: #fffc00;
+}
+
+body {
+	font-family: 'Raleway', sans-serif !important;
+}
+
+.active-link {
+	color: var(--secondary-color);
+	font-weight: bold;
+}
+
+.main-header {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url('./assets/img/showcase.jpg') no-repeat center center/cover;
+	min-height: 600px;
+	color: #fff;
+}
+
+.main-header-inner {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url('./assets/img/showcase.jpg') no-repeat center center/cover;
+	min-height: 350px;
+	color: #fff;
+}
+
+.main-header .showcase {
+	padding-top: 110px;
+}
+
+.section-designers {
+	position: relative;
+	background: url('./assets/img/designers.jpg') no-repeat center center/cover;
+	border-top: 5px solid var(--dark-color);
+	border-bottom: 5px solid var(--dark-color);
+	min-height: 160px;
+}
+
+.primary-overlay {
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.section-display img {
+	/* height: 100%; */
+	width: 100%;
+}
+
+.section-newsletter {
+	position: relative;
+	background: url('./assets/img/newsletter.jpg') no-repeat center center/cover;
+	border-top: 5px solid #333;
+	border-bottom: 5px solid #333;
+	min-height: 160px;
+}
+
+.section-newsletter .btn {
+	margin-top: 30px;
+}
+
+.section-dashboard {
+	padding: 2rem 0;
+}
+
+.carousel-item p {
+	font-size: 20px !important;
+}
+
+.tabs .indicator {
+	background: #6a1b9a !important;
+}
+
+.btn-extend {
+	display: block;
+	width: 90%;
+}
+
+.tabs .indicator {
+	background: #c2185b !important;
+}
+
+.section-features h5 span {
+	margin-right: 7px;
+}
+
+.section-admin-login {
+	margin: 100px 0;
+	margin-left: 150px;
+}
+
+/* .section-admin-login input[type='submit'] { */
+/* margin-left: 30px; */
+/* } */
+
+.social {
+	display: flex;
+	align-items: center;
+}
+
+.social li {
+	margin: 0 1rem;
+}
+
+.fa-facebook {
+	color: #fff;
+}
+
+.fa-facebook:hover {
+	color: var(--facebook);
+}
+
+.fa-twitter {
+	color: #fff;
+}
+
+.fa-twitter:hover {
+	color: var(--twitter);
+}
+
+.fa-instagram {
+	color: #fff;
+}
+
+.fa-instagram:hover {
+	color: transparent;
+	background: var(--instagram);
+	background: var(--insta-gradient);
+	background-clip: text;
+}
+
+.fa-snapchat {
+	color: #fff;
+}
+
+.fa-snapchat:hover {
+	color: var(--snapchat);
+}
+
+.card-content a {
+	color: var(--primary-color) !important;
+}
+
+.card-action a {
+	color: var(--primary-color) !important;
+}
+
+a.cart-action {
+	color: #ff8f00 !important;
+}
+
+.section-empty-cart {
+	padding: 200px 0;
+}
+
+.section-cart {
+	padding: 80px 20px;
+}
+
+.section-product-details {
+	padding: 50px 0;
+}
+
+.spinner {
+	padding: 100px 0;
+}
+
+.section-checkout {
+	padding: 100px 0;
+}
+
+@media (max-width: 500px) {
+	.brand-logo {
+		font-size: 1.3rem !important;
+	}
+
+	.brand-logo i {
+		display: none;
+	}
+
+	.main-header {
+		line-height: 1.2;
+	}
+
+	.main-header h5 {
+		margin-top: 50px;
+	}
+
+	.main-header h1 {
+		font-size: 2rem;
+	}
+
+	.section-designers,
+	.section-newsletter {
+		min-height: 240px;
+	}
+
+	.section-newsletter .btn {
+		margin-top: 5px;
+	}
+
+	.section-dashboard {
+		padding: 1rem 0;
+	}
+
+	.card-action {
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+	.section-admin-login {
+		margin: 0;
+	}
+
+	.section-cart {
+		padding: 0;
+	}
+
+	/* .section-admin-login input[type='submit'] { */
+	/* margin-left: 10px; */
+	/* } */
+}
